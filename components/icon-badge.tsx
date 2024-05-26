@@ -28,8 +28,8 @@ const iconVariants = cva(
   {
     variants: {
       variant: {
-        default: "text-sky-700",
-        success: "text-emerald-700",
+        default: "text-s1",
+        success: "text-s1",
       },
       size: {
         default: "h-8 w-8",
