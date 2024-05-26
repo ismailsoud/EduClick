@@ -37,12 +37,14 @@ const Header = () => {
           <Image src={logo} alt='logo' width={200} height={70}/>
           </div>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
+            <Link href="/sign-in">
               <p className="text-white mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
                 Se connecter
               </p>
             </Link>
-            <button className="text-s1 font-bold border-s2 border-2 px-5 py-2 rounded-full bg-s2">S'inscrire</button>
+            <Link href="/sign-up">
+              <button className="text-s1 font-bold border-s2 border-2 px-5 py-2 rounded-full bg-s2">S'inscrire</button>
+            </Link>
           </div>
         </nav>
       </header>
