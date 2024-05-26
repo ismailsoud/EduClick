@@ -71,7 +71,7 @@ export const ChapterAccessForm = ({
         Chapter access
         <Button onClick={toggleEdit} variant="ghost">
           {isEditing ? (
-            <>Cancel</>
+            <>Anuller</>
           ) : (
             <>
               <Pencil className="h-4 w-4 mr-2" />
@@ -122,7 +122,7 @@ export const ChapterAccessForm = ({
                 disabled={!isValid || isSubmitting}
                 type="submit"
               >
-                Save
+                Sauvgarder
               </Button>
             </div>
           </form>

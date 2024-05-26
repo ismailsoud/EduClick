@@ -51,7 +51,7 @@ export const ChapterVideoForm = ({
         Chapter video
         <Button onClick={toggleEdit} variant="ghost">
           {isEditing && (
-            <>Cancel</>
+            <>Anuller</>
           )}
           {!isEditing && !initialData.videoUrl && (
             <>

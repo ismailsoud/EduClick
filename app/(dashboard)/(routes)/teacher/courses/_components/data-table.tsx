@@ -67,7 +67,7 @@ export function DataTable<TData, TValue>({
         <Link href="/teacher/create">
           <Button>
             <PlusCircle className="h-4 w-4 mr-2" />
-            New course
+            Crée Nouveau cours
           </Button>
         </Link>
       </div>
@@ -108,7 +108,7 @@ export function DataTable<TData, TValue>({
             ) : (
               <TableRow>
                 <TableCell colSpan={columns.length} className="h-24 text-center">
-                  No results.
+                aucun résultats.
                 </TableCell>
               </TableRow>
             )}

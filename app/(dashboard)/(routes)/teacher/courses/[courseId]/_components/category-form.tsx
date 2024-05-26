@@ -68,14 +68,14 @@ export const CategoryForm = ({
   return (
     <div className="mt-6 border bg-slate-100 rounded-md p-4">
       <div className="font-medium flex items-center justify-between">
-        Course category
+      Catégorie de cours
         <Button onClick={toggleEdit} variant="ghost">
           {isEditing ? (
-            <>Cancel</>
+            <>Anuller</>
           ) : (
             <>
               <Pencil className="h-4 w-4 mr-2" />
-              Edit category
+              Modifier la catégorie
             </>
           )}
         </Button>
@@ -114,7 +114,7 @@ export const CategoryForm = ({
                 disabled={!isValid || isSubmitting}
                 type="submit"
               >
-                Save
+                Sauvgarder
               </Button>
             </div>
           </form>

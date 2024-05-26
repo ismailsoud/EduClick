@@ -75,17 +75,17 @@ const CourseIdPage = async ({
     <>
       {!course.isPublished && (
         <Banner
-          label="This course is unpublished. It will not be visible to the students."
+          label="Ce cours n'est pas publié. Il ne sera pas visible par les étudiants."
         />
       )}
       <div className="p-6">
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-y-2">
             <h1 className="text-2xl font-medium">
-              Course setup
+            Configuration du cours
             </h1>
             <span className="text-sm text-slate-700">
-              Complete all fields {completionText}
+            Remplissez tous les champs{completionText}
             </span>
           </div>
           <Actions
@@ -99,7 +99,7 @@ const CourseIdPage = async ({
             <div className="flex items-center gap-x-2">
               <IconBadge icon={LayoutDashboard} />
               <h2 className="text-xl">
-                Customize your course
+                Personnalisez votre cours
               </h2>
             </div>
             <TitleForm
@@ -128,7 +128,7 @@ const CourseIdPage = async ({
               <div className="flex items-center gap-x-2">
                 <IconBadge icon={ListChecks} />
                 <h2 className="text-xl">
-                  Course chapters
+                Chapitres du cours
                 </h2>
               </div>
               <ChaptersForm
@@ -140,7 +140,7 @@ const CourseIdPage = async ({
               <div className="flex items-center gap-x-2">
                 <IconBadge icon={CircleDollarSign} />
                 <h2 className="text-xl">
-                  Sell your course
+                Specifie le prix
                 </h2>
               </div>
               <PriceForm
@@ -152,7 +152,7 @@ const CourseIdPage = async ({
               <div className="flex items-center gap-x-2">
                 <IconBadge icon={File} />
                 <h2 className="text-xl">
-                  Resources & Attachments
+                Ressources et pièces jointes
                 </h2>
               </div>
               <AttachmentForm

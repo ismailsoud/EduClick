@@ -24,7 +24,7 @@ export const columns: ColumnDef<Course>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Title
+          Titre
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
@@ -38,7 +38,7 @@ export const columns: ColumnDef<Course>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Price
+          Prix
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
@@ -47,7 +47,7 @@ export const columns: ColumnDef<Course>[] = [
       const price = parseFloat(row.getValue("price") || "0");
       const formatted = new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "USD"
+        currency: "Dhs"
       }).format(price);
 
       return <div>{formatted}</div>
@@ -61,7 +61,7 @@ export const columns: ColumnDef<Course>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Published
+          Publié
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
@@ -74,7 +74,7 @@ export const columns: ColumnDef<Course>[] = [
           "bg-slate-500",
           isPublished && "bg-sky-700"
         )}>
-          {isPublished ? "Published" : "Draft"}
+          {isPublished ? "Publié" : "Brouillon"}
         </Badge>
       )
     }
@@ -96,7 +96,7 @@ export const columns: ColumnDef<Course>[] = [
             <Link href={`/teacher/courses/${id}`}>
               <DropdownMenuItem>
                 <Pencil className="h-4 w-4 mr-2" />
-                Edit
+                Modifié
               </DropdownMenuItem>
             </Link>
           </DropdownMenuContent>

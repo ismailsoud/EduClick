@@ -32,13 +32,13 @@ export default async function Dashboard() {
             <div className="border-b-2 border-slate-400">
               <InfoCard
                 icon={Loader}
-                label="In Progress"
+                label="En cours"
                 numberOfItems={coursesInProgress.length}
               />
             </div>
             <InfoCard
               icon={Check}
-              label="Completed"
+              label="Terminé"
               numberOfItems={completedCourses.length}
               variant="success"
             />

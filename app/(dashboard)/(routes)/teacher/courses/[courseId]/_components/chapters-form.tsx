@@ -93,14 +93,14 @@ export const ChaptersForm = ({
         </div>
       )}
       <div className="font-medium flex items-center justify-between">
-        Course chapters
+        Chapitres du cours
         <Button onClick={toggleCreating} variant="ghost">
           {isCreating ? (
-            <>Cancel</>
+            <>Anuller</>
           ) : (
             <>
               <PlusCircle className="h-4 w-4 mr-2" />
-              Add a chapter
+              Ajouter un chapitre
             </>
           )}
         </Button>
@@ -131,7 +131,7 @@ export const ChaptersForm = ({
               disabled={!isValid || isSubmitting}
               type="submit"
             >
-              Create
+              Crée
             </Button>
           </form>
         </Form>
