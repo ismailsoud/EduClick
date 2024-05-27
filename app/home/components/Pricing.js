@@ -186,8 +186,7 @@ const Pricing = () => {
               Huge Global Network of Fast VPN{" "}
             </motion.h3>
             <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-              See LaslesVPN everywhere to make it easier for you when you move
-              locations.
+            EduClic est une plateforme d'apprentissage en ligne qui propose des cours diversifiés pour développer des compétences à travers une interface intuitive.
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
