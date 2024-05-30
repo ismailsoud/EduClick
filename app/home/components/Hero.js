@@ -13,7 +13,7 @@ const Hero = ({
     {
       name: "Étudiants",
       number: "5K+",
-      icon: "/assets/Icon/users.svg",
+      icon: "users.png",
     },
     {
       name: "Enseignants",
