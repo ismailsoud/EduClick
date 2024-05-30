@@ -20,7 +20,7 @@ const SearchPage = async ({
 }: SearchPageProps) => {
   const { userId } = auth();
 
-  if (!userId) {
+  if (!userId) { 
     return redirect("/");
   }
 
@@ -34,6 +34,7 @@ const SearchPage = async ({
     userId,
     ...searchParams,
   });
+
 
   return (
     <>

@@ -34,7 +34,7 @@ const Hero = ({
               Profitez d'une plateforme d'apprentissage qui s'adapte à vos besoins, avec des cours interactifs et accessibles à tout moment.
             </p>
             <Link href="/sign-in">
-            <ButtonPrimary>Commencez maintenant</ButtonPrimary>
+            <button className="bg-s2 text-slate-800 font-bold px-8 py-4 rounded-lg">Commencez maintenant</button>
             </Link>
           </div>
           <div className="flex w-full">
