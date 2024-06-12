@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import Link from "next/link";
+import heroImage from './Illustration1.png'
+import icon1 from './users.png'
 
 const Hero = ({
   listUser = [
@@ -18,7 +20,7 @@ const Hero = ({
     {
       name: "Enseignants",
       number: "200+",
-      icon: "/assets/Icon/teacher.svg",
+      icon: icon1,
     },
   ],
 }) => {
@@ -34,19 +36,19 @@ const Hero = ({
               Profitez d'une plateforme d'apprentissage qui s'adapte à vos besoins, avec des cours interactifs et accessibles à tout moment.
             </p>
             <Link href="/sign-in">
-            <button className="bg-s2 text-slate-800 font-bold px-8 py-4 rounded-lg">Commencez maintenant</button>
+              <button className="bg-s2 text-slate-800 font-bold px-8 py-4 rounded-lg">Commencez maintenant</button>
             </Link>
           </div>
           <div className="flex w-full">
             <div className="h-full w-full">
               <Image
-                src="/Illustration1.png"
+                src={heroImage}
                 alt="Illustration ÉduClic"
                 quality={100}
                 width={612}
                 height={383}
                 layout="responsive"
-                
+
               />
             </div>
           </div>
@@ -58,7 +60,9 @@ const Hero = ({
             <div className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0" key={index}>
               <div className="flex mx-auto w-40 sm:w-auto">
                 <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-                  <img src={user.icon} className="h-6 w-6" alt={`${user.name} icon`} />
+                  <Image src={icon1} quality={100}
+                    width={50}
+                    height={50} alt={`${user.name} icon`} />
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
