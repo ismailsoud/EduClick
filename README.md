@@ -1,51 +1,58 @@
-# Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
+# EduClick - Modern Learning Management System
 
-![Copy of Copy of Copy of Copy of Fullstack Twitter Clone (9)](https://github.com/AntonioErdeljac/next13-lms-platform/assets/23248726/fa077fca-bb74-419a-84de-54ac103bb026)
+EduClick is a comprehensive Learning Management System (LMS) built with modern web technologies. It provides a robust platform for both educators and students, featuring course management, video content delivery, and integrated payment processing.
 
+![EduClick Platform](public/logo.png)
 
-This is a repository for Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
+## 🌟 Features
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=Big_aFLmekI)
+### For Students
+- 📚 Browse & filter courses
+- 💳 Secure course purchases through Stripe
+- 📝 Track progress with chapter completion
+- 📊 Personal dashboard with progress tracking
+- 🎥 High-quality video streaming with HLS
 
-Key Features:
+### For Teachers
+- 📝 Comprehensive course creation tools
+- 📹 Video upload and processing via Mux
+- 📎 File attachments and course materials
+- ✏️ Rich text editor for detailed descriptions
+- 🔄 Drag-and-drop chapter reordering
 
-- Browse & Filter Courses
-- Purchase Courses using Stripe
-- Mark Chapters as Completed or Uncompleted
-- Progress Calculation of each Course
-- Student Dashboard
-- Teacher mode
-- Create new Courses
-- Create new Chapters
-- Easily reorder chapter position with drag n’ drop
-- Upload thumbnails, attachments and videos using UploadThing
-- Video processing using Mux
-- HLS Video player using Mux
-- Rich text editor for chapter description
-- Authentication using Clerk
-- ORM using Prisma
-- MySQL database using Planetscale
+### Technical Features
+- 🔐 Authentication using Clerk
+- 💾 MySQL Database with Prisma ORM
+- 🎨 Modern UI with Tailwind CSS
+- 🚀 Built on Next.js 13
+- 📤 File uploads via UploadThing
+
+## 🚀 Getting Started
 
 ### Prerequisites
+- Node.js 18.x.x
+- MySQL database (We recommend PlanetScale)
+- Accounts for:
+  - Clerk (Authentication)
+  - UploadThing (File storage)
+  - Mux (Video processing)
+  - Stripe (Payments)
 
-**Node version 18.x.x**
+### Installation
 
-### Cloning the repository
-
-```shell
-git clone https://github.com/AntonioErdeljac/next13-lms-platform.git
+1. Clone the repository:
+```bash
+git clone https://github.com/ismailsoud/EduClick.git
 ```
 
-### Install packages
-
-```shell
-npm i
+2. Install dependencies:
+```bash
+npm install
 ```
 
-### Setup .env file
-
-
-```js
+3. Configure environment variables:
+Create a `.env` file with the following:
+```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=
@@ -68,27 +75,51 @@ STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_TEACHER_ID=
 ```
 
-### Setup Prisma
-
-Add MySQL Database (I used PlanetScale)
-
-```shell
+4. Initialize the database:
+```bash
 npx prisma generate
 npx prisma db push
-
 ```
 
-### Start the app
-
-```shell
+5. Start the development server:
+```bash
 npm run dev
 ```
 
-## Available commands
+## 🛠️ Tech Stack
 
-Running commands with npm `npm run [command]`
+- **Frontend**: Next.js 13, React, Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Database**: MySQL with Prisma ORM
+- **Authentication**: Clerk
+- **File Storage**: UploadThing
+- **Video Processing**: Mux
+- **Payments**: Stripe
+- **UI Components**: Radix UI, Material-UI
+- **State Management**: Zustand
+- **Forms**: React Hook Form
+- **Data Validation**: Zod
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
-"# EduClick" 
+## 🤝 Contributing
+
+We welcome contributions to EduClick! Please feel free to submit issues and pull requests.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 👥 Authors
+
+- **Ismail Soudassi** - *Initial work*
+- **Abdelmounim Ikhwane** - *Initial work*
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped shape EduClick
+- Special thanks to the open-source community for the amazing tools that made this possible
